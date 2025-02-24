@@ -1,3 +1,14 @@
+# About this repo
+
+This project has been created and run using the following commands:
+
+```
+npx create-react-app my-app --template typescript
+npm install react-router-dom
+npm install --save-dev @types/react-router-dom
+npm start
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

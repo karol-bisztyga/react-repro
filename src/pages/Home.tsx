@@ -32,31 +32,29 @@ export const Home = () => {
 
   if (signedUp) {
     return (
-      <>
-        <button
-          style={{ padding: 500 }}
-          onClick={() => {
-            setSignedUp(false);
-          }}
-        >
-          go back
-        </button>
-      </>
+      <button
+        style={{ padding: 500 }}
+        onClick={() => {
+          setSignedUp(false);
+        }}
+      >
+        go back
+      </button>
     );
   }
 
   return (
-    <div id="sign-up-container">
-      <div id="sign-up-wrapper">
-        <div className="section">
+    <div>
+      <div>
+        <div>
           <input value={name} onChange={(e) => setName(e.target.value)} />
         </div>
 
-        <div className="section">
+        <div>
           <input value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
 
-        <div className="section">
+        <div>
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -64,7 +62,7 @@ export const Home = () => {
           />
         </div>
 
-        <div className="section">
+        <div>
           <button onClick={handleRegister}>Sign Up</button>
         </div>
       </div>
